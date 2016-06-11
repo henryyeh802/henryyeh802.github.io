@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskannada.css);
 
 *{
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 2px;
     font-family: 'Noto Sans Kannada',sans-serif, serif;
     background-color:white
@@ -38,15 +38,12 @@ h2{
     font-size: 1.2em;
     font-weight: bold
 }
-p{
-    font-size: 0.5em;
-    color: #CE2817
-}
 
 article{
     max-width: 940px;
     min-width: 720px;
     margin: 10px auto 10px auto;
+    color: #CE2817;
 }
 
 /*
