@@ -1,8 +1,8 @@
 body{
+    background-color: floralwhite;
     max-width: 940px;
     min-width: 720px;
     margin: 10px auto 10px auto;
-    background-color: floralwhite;
 }
 
 hr{
