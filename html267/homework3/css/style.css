@@ -1,0 +1,349 @@
+/*一些基本設定*/
+
+/*
+* {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-family: 'Noto Sans TC', sans-serif, serif;
+    box-sizing: border-box;
+}
+*/
+
+/*
+
+h1 {
+    font-size: 2.0em;
+    color: #50a1ff;
+}
+*/
+
+/*
+div.container {
+    width: 500px;
+    height: 960px;
+    margin: 0 auto;
+    background-image: url(../images/iPhone6.jpg);
+    background-repeat: no-repeat;
+
+}
+*/
+
+.device {
+    display: inline-block;
+    position: relative;
+    box-sizing: content-box !important
+/*    box-sizing: border-box;*/
+}
+
+/*.device .screen {*/
+.device .screen{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    color: #907b7b;
+    z-index: 2;
+    text-align: center;
+    display: block;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 0 0 3px #111;
+    box-shadow: 0 0 0 3px #111;
+/*    box-sizing: border-box;
+    */
+    overflow: auto;
+}
+
+.device .top-bar,
+.device .bottom-bar{
+    height: 3px;
+    background: black;
+    width: 100%;
+    display: block
+}
+
+/*.device.iphone6 {*/
+.device.iphone6 {
+    width: 375px;
+    height: 667px;
+    padding: 105px 24px;
+    background: #d9dbdc;
+    -webkit-border-radius: 56px;
+    border-radius: 56px;
+    -webkit-box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2)
+}
+
+.iphone6:before {
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    position: absolute;
+    top: 6px;
+    content: '';
+    left: 6px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: #f8f8f8;
+    z-index: 1
+}
+
+iphone6:after {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    position: absolute;
+    top: 8px;
+    content: '';
+    left: 8px;
+    -webkit-border-radius: 48px;
+    border-radius: 48px;
+    -webkit-box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 6px 3px #fff;
+    box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 6px 3px #fff;
+    z-index: 2
+}
+
+.home{
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    left: 50%;
+    margin-left: -34px;
+    bottom: 22px;
+    z-index: 3;
+    background: #303233;
+    background: -webkit-linear-gradient(bottom left, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
+    background: -o-linear-gradient(bottom left, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
+    background: linear-gradient(to top right, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#303233', endColorstr='#303233', GradientType=1)
+}
+
+.home:before {
+    background: #f8f8f8;
+    position: absolute;
+    content: '';
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    top: 4px;
+    left: 4px
+}
+
+.device.iphone6 .top-bar {
+    height: 14px;
+    background: #bfbfc0;
+    position: absolute;
+    top: 68px;
+    left: 0
+}
+
+.device.iphone6 .bottom-bar {
+    height: 14px;
+    background: #bfbfc0;
+    position: absolute;
+    bottom: 68px;
+    left: 0
+}
+
+.sleep{
+    position: absolute;
+    top: 190px;
+    right: -4px;
+    width: 4px;
+    height: 66px;
+    -webkit-border-radius: 0px 2px 2px 0px;
+    border-radius: 0px 2px 2px 0px;
+    background: #d9dbdc
+}
+
+.volume {
+    position: absolute;
+    left: -4px;
+    top: 188px;
+    z-index: 0;
+    height: 66px;
+    width: 4px;
+    -webkit-border-radius: 2px 0px 0px 2px;
+    border-radius: 2px 0px 0px 2px;
+    background: #d9dbdc
+}
+
+.volume:before {
+    position: absolute;
+    left: 2px;
+    top: -78px;
+    height: 40px;
+    width: 2px;
+    -webkit-border-radius: 2px 0px 0px 2px;
+    border-radius: 2px 0px 0px 2px;
+    background: inherit;
+    content: '';
+    display: block
+}
+
+.volume:after {
+    position: absolute;
+    left: 0px;
+    top: 82px;
+    height: 66px;
+    width: 4px;
+    -webkit-border-radius: 2px 0px 0px 2px;
+    border-radius: 2px 0px 0px 2px;
+    background: inherit;
+    content: '';
+    display: block
+}
+
+.camera {
+    background: #3c3d3d;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    margin-left: -6px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    z-index: 3
+}
+
+.sensor {
+    background: #3c3d3d;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 49px;
+    left: 134px;
+    z-index: 3;
+    -webkit-border-radius: 100%;
+    border-radius: 100%
+}
+
+.speaker {
+    background: #292728;
+    width: 70px;
+    height: 6px;
+    position: absolute;
+    top: 54px;
+    left: 50%;
+    margin-left: -35px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    z-index: 3
+}
+
+
+
+/*
+.home:before{
+    background: #f8f8f8;
+    position: absolute;
+    content: '';
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    top: 4px;
+    left: 4px
+}
+*/
+
+nav{
+    width: 95%;
+/*
+    height: 60px;
+    line-height: 60px;
+*/
+    margin: 0 auto 10px auto;
+/*    padding: 5px 5px 5px 5px;*/
+/*    letter-spacing: 0.15em;*/
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+/*    text-align: center;*/
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    width: 18%;
+/*    float: left;*/
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.thumbnail{
+    width: 32%;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    overflow: auto;
+    color: #000;
+    letter-spacing: 0.15em;
+    text-align: center
+}
+
+.thumbnail img{
+    width: 100%;
+}
+
+.thumbnail a{
+    text-decoration: none;
+}
+/*
+nav{
+    width: 80%;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto 10px auto;
+    letter-spacing: 0.15em;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    width: 15%;
+}
+*/
+
+
+.screen_container
+{
+/*    display: block;*/
+    
+/*    padding: 0;*/
+/*    margin: 0px 10px 0px 10px;*/
+/*    background-color: aqua*/
+/*    position: relative;*/
+/*    top: 0;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+}
+
+.header h1{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.header p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
