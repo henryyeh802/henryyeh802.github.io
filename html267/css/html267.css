@@ -130,12 +130,19 @@ body{
 }
 
 
+/*
 .row3 {
     width: 100%;
     margin: 0 auto;
     overflow: auto;
 }
 
+.row3:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+*/
 .thumbnail{
     width: 100%;
 /*    margin: 0px 5px 0px 5px;*/
@@ -294,7 +301,7 @@ li.dropdown{
 .content {
     width: 70%;
     margin: 0 auto;
-    overflow: auto;
+/*    overflow: auto;*/
 }
 
 /*
