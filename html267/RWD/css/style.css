@@ -20,9 +20,6 @@
 [class*="col-"] {
     width: 100%; 
     float: left;
-/*    border: 1px solid black;*/
-/*    padding: 5px;*/
-/*    background-color: antiquewhite;*/
 }
 
 /*PC screen set to >=992px*/
@@ -136,111 +133,19 @@
 
 .thumbnail{
     width: 100%;
-/*    margin: 0px 5px 0px 5px;*/
-/*    margin: 10px;*/
     margin: 0 auto;
     padding: 5px;
     border: 1px solid #aaa7a7;
 }
 .thumbnail img{
     width: 100%;
-/*    padding: 10px;*/
-/*    height: 100px;*/
-/*    border-radius: 10px;
-    */
-/*    border-radius: 50%;*/
-/*    max-width: 100%;*/
-}
-
-.row4 {
-    width: 80%;
-    margin: 0 auto;
-    overflow: auto;
-}
-
-.thumbnail_Left{
-    width: 90%;
-/*    margin: 0px auto 0px 0px;*/
-/*    margin: 0px 5px 0px 5px;*/
-/*    margin: 10px;*/
-/*    margin: 0 auto;*/
-    padding: 5px;
-    border: 1px solid #aaa7a7;
-}
-
-.thumbnail_Middle{
-    width: 90%;
-    margin: 0px auto;
-/*    margin: 0px 5px 0px 5px;*/
-/*    margin: 10px;*/
-/*    margin: 0 auto;*/
-    padding: 5px;
-    border: 1px solid #aaa7a7;
-}
-
-.thumbnail_Right{
-    width: 90%;
-    margin: 0 0 0 auto;
-/*
-    margin-right: 0;
-    margin-left: 10px;
-*/
-/*    margin: 0px 5px 0px 5px;*/
-/*    margin: 10px;*/
-/*    margin: 0 auto;*/
-    padding: 5px;
-    border: 1px solid #aaa7a7;
-}
-
-
-.thumbnail_Right>img,
-.thumbnail_Middle>img,
-.thumbnail_Left>img{
-    width: 100%;
-/*    padding: 10px;*/
-/*    height: 100px;*/
-/*    border-radius: 10px;
-    */
-/*    border-radius: 50%;*/
-/*    max-width: 100%;*/
-}
-
-.nav_container{
-    width: 100%;
-    background-color: #333;
-    overflow: auto;
 }
 
 nav{
-/*    background-color: #333;*/
     width: 80%;
-    height: 30px;
-    line-height: 30px;
-/*    text-align: center;*/
+    height: 50px;
+    min-width: 270px;
     margin: 0 auto;
-}
-
-nav ul{
-    list-style-type: none;
-    overflow: auto;
-}
-
-nav li{
-    float: left;
-}
-
-nav li a{
-    display: inline-block;
-    color: gray;
-    font-weight: bold;
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-decoration: none;
-}
-
-nav li a:hover{
-    background-color: #111;
 }
 
 header{
@@ -260,8 +165,6 @@ header{
     font-size: 8px;
     border-radius: 3px;
     margin: 2px;;
-/*    padding: 5px;*/
-
 }
 
 .subtitle {
@@ -270,7 +173,6 @@ header{
 }
 
 .feature_buttom {
-/*    display: inline-block;*/
     width: 100%;
     overflow: auto;
 }

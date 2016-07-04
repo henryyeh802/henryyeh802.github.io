@@ -3,85 +3,96 @@
 
 <head>
     <meta charset="UTF-8">
-<!--    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/">-->
+    <!--    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/">-->
+    <link rel="stylesheet" href="css/animate.css">
     <link type="text/css" rel="stylesheet" href="css/html267.css">
     <title>HTML267-HUNGLIN YEH</title>
 </head>
 
 <body>
     <header>
-        <h1>HTML267</h1>
-        <p><i>HUNGLIN YEH</i></p>
+        <h1>NTU HTML267</h1>
     </header>
     <div class="nav_container">
         <nav>
             <ul>
-                <li><a class="active" href="#home">HOME</a></li>               
+                <li><a class="active" href="#home">HOME</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">HTML267</a>
                     <div class="dropdown-content">
-                        <a href="homework1/hw1.html" target="_blank">Food</a>
-                        <a href="homework3/index.html" target="_blank">CSS</a>
+                        <a href="Food/index.html" target="_blank">Food</a>
+                        <a href="resume/hw2.html" target="_blank">Resume</a>
+                        <a href="iphone/index.html" target="_blank">CSS</a>
                         <a href="RWD/index.html" target="_blank">RWD</a>
                     </div>
-                </li> 
+                </li>
                 <li><a href="#">ALBUM</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>       
+                <li><a href="resume/hw2.html">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
             </ul>
         </nav>
-    </div>  
-   
-    <div class="content">
+    </div>
+
+    <div class="content" id="main-frame">
         <div class="row3">
             <div class="col-md-4 col-sm-6">
-                <div class="thumbnail">
-                    <a href="homework1/hw1.html" target="_blank">
+                <div class="thumbnail wow fadeInLeft" data-wow-duration="3s" data-wow-delay="1s" data-wow-iteration="1" data-wow-offset="100">
+                    <a href="Food/index.html" target="_blank">
                         <img src="images/foodjourney_thumb_350_250.jpg" alt="">
                         <p>Food Journey</p>
-                    </a>                
+                    </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <div class="thumbnail">
-                    <a href="homework2/hw2.html" target="_blank">
+                <div class="thumbnail wow fadeInDown" data-wow-duration="3s" data-wow-delay="1s" data-wow-iteration="1" data-wow-offset="100">
+                    <a href="resume/hw2.html" target="_blank">
                         <img src="images/Resume_thumb_350_250.jpg" alt="">
                         <p>Resume</p>
-                    </a>              
+                    </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <div class="thumbnail">
-                    <a href="homework3/index.html" target="_blank">
+                <div class="thumbnail wow fadeInRight" data-wow-duration="3s" data-wow-delay="1s" data-wow-iteration="1" data-wow-offset="100">
+                    <a href="iphone/index.html" target="_blank">
                         <img src="images/iphone_thumb2_350_250.jpg" alt="">
-                        <p>CSS iPhone</p>  
-                    </a>              
+                        <p>CSS iPhone</p>
+                    </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <div class="thumbnail">
-                   <a href="RWD/index.html" target="_blank">
+                <div class="thumbnail wow fadeInLeft" data-wow-duration="3s" data-wow-delay="1s" data-wow-iteration="1" data-wow-offset="100">
+                    <a href="RWD/index.html" target="_blank">
                         <img src="images/RWD_01_350_250.jpg" alt="">
-                        <p>RWD</p>               
-                   </a>                
+                        <p>RWD</p>
+                    </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <div class="thumbnail">
-                <img src="images/Album_thumb_350_250.jpg" alt="">
-                <p>Voyage</p>                
+                <div class="thumbnail wow fadeInUp" data-wow-duration="3s" data-wow-delay="1s" data-wow-iteration="1" data-wow-offset="100">
+                    <a href="BS/bootstrap.html" target="_blank">
+                        <img src="images/Carousel-header_350_250.jpg" alt="">
+                        <p>BootStrap</p>
+                    </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <div class="thumbnail">
-                <img src="images/puzzle_thumb_350_250.jpg" alt="">
-                <p>Puzzle</p>               
+                <div class="thumbnail wow fadeInRight" data-wow-duration="3s" data-wow-delay="1s" data-wow-iteration="1" data-wow-offset="100">
+                    <a href="animation/index.html" target="_blank">
+                        <img src="images/Animation_350_250.png" alt="">
+                        <p>Anamation</p>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-<!--    <footer>footer</footer>-->
- 
+
+    <footer>Created by HungLin Yeh</footer>
+
+    <script src="scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
