@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    border-bottom: 3px solid #7d97ad;
+    margin: 20px 0 20px 0;
+}
+
+header > img {
+    max-height: 50%;
+}
+
+.myName {
+    text-align: right;
+    color: #2d3c49;
+}
+
+#heroSession {
+    margin-bottom: 30px;
+}
+
+.mainBG {
+    width: 100%;
+}
+
+#subTitle {
+    color: #7d97ad;
+}
+
+.title {
+    color: #2d3c49;
+}
+
+/*Responsive style for Nexus 5*/
+
+@media screen and (max-width:360px) {
+    header {
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-around;
+    }
+    header > img {
+        max-height: 30%;
+    }
+
+    .myName {
+        text-align: center;
+    }
+}
