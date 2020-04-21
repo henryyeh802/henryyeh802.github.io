@@ -15,3 +15,5 @@ This is where I record my projects.
 * **COVID-19 Tracking** - *COVID-19* - [Link](https://covid-19-tracking-hy.herokuapp.com/)
 
 * **HJ Global Consulting Inc.** - *Company Site* - [Link](https://hjglobal.herokuapp.com/)
+
+* **Cynthia Art Studio** - *Cynthia's Art Site* - [Link](https://cynthia-art-studio.herokuapp.com/)
